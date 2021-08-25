@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigator from './Navigator'
 import {useState} from 'react'
-
+import './TouchControls'
 // Images
 import master from './assets/images/master_bedroom.jpg'
 import hari from './assets/images/hari_room.jpg'
@@ -31,7 +31,7 @@ const VRScene = () => {
             <a-scene>
             <a-assets>
                 {data.map(item=>{
-                return <img id={item.name} src={item.url} alt={item.name}/>
+                return <img key={item.name} id={item.name} src={item.url} alt={item.name}/>
                 })}
             </a-assets>
             <a-sky id="sky" cursor="rayOrigin: mouse; fuse: false;" src= {'#'+data[Room].name} /> 
