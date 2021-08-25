@@ -4,19 +4,6 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 const Navigator = (props) => {
-    const today = (new Date().getDay())-1;
-
-    // const navigate = (direction) => {
-    //     if(direction==='backward'){
-    //         props.setDay(day=>{
-    //             if(day===0)return 6
-    //             else return (day-1)%7
-    //         })
-    //     }
-    //     else{
-    //         props.setDay(day=>(day+1)%7)
-    //     }
-    // }
     return(
         <>
             <div className="next-buttons-container">

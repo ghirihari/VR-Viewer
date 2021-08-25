@@ -1,5 +1,4 @@
 import './App.css';
-import VRScene from './VRScene';
 import Drawer from './Drawer';
 
 function App() {
