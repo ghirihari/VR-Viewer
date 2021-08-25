@@ -1,7 +1,6 @@
 import React from 'react'
 import Navigator from './Navigator'
 import {useState} from 'react'
-import './TouchControls'
 // Images
 import master from './assets/images/master_bedroom.jpg'
 import hari from './assets/images/hari_room.jpg'
@@ -35,7 +34,7 @@ const VRScene = () => {
                 })}
             </a-assets>
             <a-sky id="sky" cursor="rayOrigin: mouse; fuse: false;" src= {'#'+data[Room].name} /> 
-            <a-camera id="cam1" look-controls="reverseMouseDrag: true"  cursor="rayOrigin: mouse; fuse: false;"></a-camera> 
+            <a-camera id="cam1" look-controls="reverseMouseDrag:true touchEnabled:true" cursor="rayOrigin: mouse; fuse: false;"></a-camera> 
             </a-scene>
             <div className="day-container">
             <Navigator room={data[Room]} navigate={navigate} />
